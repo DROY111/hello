@@ -1,0 +1,123 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+form {
+width: 50%;
+border: 2px solid red;
+background-color: FFE689;
+margin-left: 300px;
+margin-top: 20px;
+}
+h2 {
+color: white;
+background-color: c3c3c3;
+}
+.label {
+font-size: 20px;
+margin-left: 20px;
+font-weight: bold;
+}
+.input {
+width: 94%;
+height: 35px;
+margin-left: 20px;
+outline: none;
+border: 0.5px solid red;
+border-radius: 5px;
+font-size: 17px;
+background-color: white;
+}
+.button {
+width: 95px; 
+height: 40px;
+font-size: 20px;
+background-color: green;
+color: white;
+border: none;
+border-radius: 5px;
+margin-left: 550px;
+cursor: pointer;
+}
+table {
+border: 1px solid red;
+width: 80%;
+height: 70px;;
+background-color: FFE689;
+
+}
+.result {
+background-color: white;
+font-size: 20px;
+font-weight: bold;
+position: relative;
+}
+</style>
+</head>
+<body>
+<center><h2><i class="fa fa-credit-card"></i> Payment Request</h2></center>
+<form method="post" NAME="google-sheet">
+<br><br><br>
+<label class="label"> Choose your Bank <i class="fa fa-bank"></i></label>
+<br>
+<select class="input" name="BankName">
+<option></option>
+<option>State Bank of India</option>
+<option>HDFC Bank</option>
+<option>ICICI Bank</option>
+<option>Bank of Baroda</option>
+<option>Punjab National Bank</option>
+<option>Central Bank of India</option>
+<option>Canara Bank</option>
+<option>Union Bank of India</option>
+<option>UCO Bank</option>
+<option>Indian Bank</option>
+<option>Punjab and Sind Bank</option>
+<option>Bank of India</option>
+<option>IDBI Bank</option>
+<option>IDFC First Bank</option>
+<option>Gramin Bikash Bank</option>
+</select>
+<br><br>
+<label class="label"> Mode Of Payment <i class="fa fa-credit-card"></i></label>
+<br>
+<select class="input" name="PaymentMode">
+<option></option>
+<option>NEFT</option>
+<option>Paytm</option>
+<option>PhonePe</option>
+<option>Cash Deposite</option>
+<option>Online Transfer</option>
+<option>Google Pay</option>
+<option>Net Banking</option>
+<option>UPI / QR Code</option>
+</select>
+<br><br>
+<label class="label"> Amount <i class="fa fa-money"></i></label>
+<br>
+<input type="text" class="input" name="Amount">
+<br><br>
+<label class="label">Purpose of Payment</label>
+<br>
+<input type="text" class="input" name="Purpose">
+<br><br>
+<label class="label">Date <i class="fa fa-calendar"></i></label>
+<br>
+<input type="date" class="input" name="Date">
+<br><br>
+<input type="submit" class="button">
+<br><br>
+</form>
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwycZNSdLgRavqySWOQQSe3RsI7NMAv7o8MpGNVxRG383Cytra6lXFOK01ODmt-BWDV3w/exec'
+          const form = document.forms['google-sheet']
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>

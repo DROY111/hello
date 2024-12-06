@@ -1,0 +1,95 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+form{
+width: 90%;
+background-color: transparent;
+border: 3px solid black;
+}
+h2 {
+color: red;
+font-size: 30px;
+margin-bottom: -3px;
+margin-top: -3px;
+}
+label {
+color: red;
+font-size: 25px;
+font-weight: bold;
+margin-left: 20px;
+}
+input {
+width: 95%;
+height: 40px;
+color: red;
+font-size: 17px;
+background-color: transparent;
+border-bottom: 2px solid black;
+margin-left: 20px;
+outline: none;
+border-top: none;
+border-left: none;
+border-right: none;
+}
+.captcha {
+font-size: 18px;
+font-weight: bold;
+letter-spacing: 3px;
+background-color: red;
+color: yellow;
+margin-left: 30px;
+}
+button {
+width: 190px;
+height: 40px;
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-bottom: 20px;
+border: none;
+border-radius: 5px;
+background-color: green;
+color: white;
+cursor: pointer;
+}
+button:hover{
+letter-spacing: 8px;
+background-color: white;
+color: green;
+border: 1px solid green;
+}
+</style>
+</head>
+<body>
+<form>
+<center><h2>Registration Details</h2></center>
+<label>1. Name:  <i class="fa fa-user"></i> </label>
+<br><input type=text placeholder="Enter Your Name" required oninvalid="this.setCustomValidity('Enter Your Name')" oninput="setCustomValidity('')">
+<br><br>
+<label>2. Date Of Birth: <i class="fa fa-birthday-cake"></i></label>
+<br><input type="date" required oninvalid="this.setCustomValidity('Enter date of birth')" oninput="setCustomValidity('')">
+<br><br>
+<label>3. Address: <i class="fa fa-address-book"></i> </label>
+<br><input type=text placeholder="Your Permanent Address" required oninvalid="this.setCustomValidity('Enter Permanent Address')" oninput="setCustomValidity('')">
+<br><br>
+<label>4. Mobile Number: <i class="fa fa-mobile"></i></label>
+<br><input type=text placeholder="Enter Active Mobile Number" required oninvalid="this.setCustomValidity('Enter Active Mobile Number')" oninput="setCustomValidity('')">
+<br><br>
+<label>5. Email Address: <i class="fa fa-envelope"></i></label>
+<br><input type=email placeholder="Enter Valid Email Address" required oninvalid="this.setCustomValidity('Enter Valid Email Address')" oninput="setCustomValidity('')">
+<br><br>
+<label>6. Password: <i class="fa fa-lock"></i></label>
+<br><input type=password placeholder="6.1) Create A strong password" required oninvalid="this.setCustomValidity('Create a Strong Password')" oninput="setCustomValidity('')">
+<br><br><input type=password placeholder="6.2) Re-type password" required oninvalid="this.setCustomValidity('Please Re-enter the Passowrd')" oninput="setCustomValidity('')">
+<br><br>
+<label>7. Captcha: <i class="fa fa-refresh"></i></label>
+<font class="captcha">7i24DH</font>
+<br><input type=text placeholder="Enter the text shown above" required oninvalid="this.setCustomValidity('Enter Valid Captcha')" oninput="setCustomValidity('')">
+<br><br>
+<center><button type=submit onclick="return confirm('Are you sure to save ??')"><i class="fa fa-paper-plane"></i>Submit</button>
+</form>
+</body>
+</html>

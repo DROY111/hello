@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Remake of college Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  *{
+    margin: 0px;
+  }
+  body{
+    background-image: url("file:///D:/index%20html%20file/download.jfif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 80%;
+  }
+  button {
+    margin-top: 8px;
+    width: 310px;
+    box-shadow: 3px 3px 3px black;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  button:hover{
+    box-shadow: none;
+border: 2px solid black;
+  }
+    .button{
+      border: 2px solid white;
+      background-color: #9BEF8E;
+      height: 35px;
+      color: #EF2F77;
+      font-weight: bold;
+      font-size: 18px;
+      POSITION: ABSOLUTE;
+    }
+       .button-2{
+      border: 2px solid white;
+      background-color: #2371C4;
+      height: 35px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+POSITION: ABSOLUTE;
+margin-top: 35px;
+    }
+       .button-3{
+      border: 2px solid white;
+      background-color: #057227;
+      height: 35px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+POSITION: ABSOLUTE;
+margin-top: -46px;
+margin-left: 380px;
+    }
+       .button-4{
+      border: 2px solid white;
+      background-color: #CB1D54;
+      height: 35px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+POSITION: ABSOLUTE;
+margin-top: 28px;
+    }
+       .button-5{
+      border: 2px solid white;
+      background-color: white;
+      height: 35px;
+      color: #FF1F66;
+      font-weight: bold;
+      font-size: 18px;
+POSITION: ABSOLUTE;
+margin-top: 40px;
+    }
+       .button-6{
+      border: 2px solid white;
+      background-color: #3C1FFF;
+      height: 35px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+POSITION: ABSOLUTE;
+margin-top: -75px;
+margin-left: 380px;
+    }
+    .div{
+      width: 100%;
+      height: 55px;
+      background-color: #1F96FF;
+    }
+    img{
+      height: 40px;
+      width: 40px;
+    }
+    .label{
+      font-size: 45px;
+      margin-top: 80px;
+      font-weight: bold;
+      color: white;
+    }
+    .div22{
+      width: 100%;
+      height: 27px;
+      background-color: #DEE5EB;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .label-2{
+      font-size: 17px;
+      font-weight: bold;
+      color: red;
+      margin-top: 10px;
+background-color: #d1d1d1;
+width: 100%;
+    }
+    p {
+      margin-top: 380px;
+      font-size: 30px;
+    }
+.login {
+width: 100%;
+height: 55px;
+background-color: black;
+}
+.menu-bar {
+font-size: 20px;
+color: #D1D1D1;
+FONT-WEIGHT: BOLD;
+text-decoration: none;
+margin-left: 70px;
+margin-top: 20px;
+}
+.menu-bar:hover {
+color: #FFFFFF;
+}
+.principal {
+margin-left: 1060px;
+margin-top: -500px;
+font-family: Algerian;
+color: white;
+position: absolute;
+font-size: 30px;
+background-color: black;
+}
+.principal-img {
+height: 120px;
+width: 120px;
+border-radius: 50px;
+margin-left: 1150px;
+border: 3px solid red;
+position: absolute;
+margin-top: -450px;
+}
+.principal-name {
+margin-left: 1110px;
+margin-top: -320px;
+font-family: Bell MT;
+color: yellow;
+position: absolute;
+font-size: 30px;
+}
+.menu {
+width: 140px;
+height: 40px;
+margin-left: 20px;
+background-color: green;
+color: white;
+font-weight: bold;
+border: 2px solid white;
+border-radius: 5px;
+}
+.menu:hover {
+color: green;
+background-color: white;
+border: 1.5px solid green;
+border-radius: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+background-color: green;
+color: white;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.menu-55 {
+width: 130px;
+height: 40px;
+margin-left: 30px;
+background-color: white;
+color: green;
+font-weight: bold;
+border: 2px solid white;
+}
+.principal-img-1 {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+position: absolute;
+}
+.name {
+margin-top: 15px;
+margin-left: 150px;
+text-transform: uppercase;
+color: red;
+font-family: Cooper Black;
+font-size: 50px;
+background-color: yellow;
+position: absolute;
+}
+.name-22 {
+margin-top: 75px;
+margin-left: 215px;
+color: yellow;
+font-family: Elephant;
+font-size: 30px;
+background-color: blue;
+position: absolute;
+}
+.acrrediated {
+color: white;
+font-size: 25px;
+margin-left: 200px;
+background-color: yellow;
+color: blue;
+font-family: Aparajita;
+}
+.services {
+width: 740px;
+height: 250px;
+border: 2px solid red;
+border-radius: 5px;
+background-color: yellow;
+
+}
+.servcs {
+width: 100%;
+height: 40px;
+background-color: black;
+border-radius: 3px;
+}
+.srvc {
+color: white;
+position: absolute;
+font-size: 35px;
+margin-left: 150px;
+font-weight: bold;
+}
+.srvc-22 {
+color: white;
+position: absolute;
+font-size: 35px;
+margin-left: 450px;
+font-weight: bold;
+}
+  </style>
+</head>
+
+<body>
+<div class="login">
+<BR>
+<a href="" class="menu-bar"><i class="fa fa-address-book"></i> Contact</a>
+<a href="" class="menu-bar"><i class="fa fa-info"></i> About</a>
+<a href="" class="menu-bar"><i class="fa fa-sign-in"></i> Login</a>
+<label class="acrrediated"><i><i class="fa fa-trophy" aria-hidden="true"></i> S.K. Roy College is Accredited by NAAC with 'B' Grade <i class="fa fa-trophy" aria-hidden="true"></i></i></label>
+</div>
+  <div class="div">
+    <center><label for="Welcome To Online Portal Of S K Roy College" class="label" align="center"><i class="fa fa-handshake-o"></i> Welcome To Online Portal Of S.K Roy College <i class="fa fa-handshake-o"></i></label></center>
+  </div>
+<button class="menu-55"><i class="fa fa-home"></i> Home</button>
+<button class="menu"><i class="fa fa-info-circle"></i> About Us</button>
+<button class="menu"><i class="fa fa-user-circle"></i> Administration</button>
+<div class="dropdown">
+<button class="menu"><i class="fa fa-building"></i> Department  </button>
+<div class="dropdown-content">
+<a href="#">English</a>
+<a href="#">Bengali</a>
+<a href="#">Political Science</a>
+<a href="">Economics</a>
+<a href="">History</a>
+<a href="">Persian</a>
+<a href="">Philosophy</a>
+  </div>
+</div>
+<button class="menu"><i class="fa fa-building-o"></i> IQAC</button>
+<button class="menu"><i class="fa fa-book"></i> Library</button>
+<div class="dropdown">
+<button class="menu"><i class="fa fa-male"></i> Student's Corner</button>
+<div class="dropdown-content">
+    <a href="#">Admission Portal</a>
+    <a href="#">Examination Portal</a>
+</div>
+</div>
+<button class="menu"><i class="fa fa-envelope"></i> Contact</button>
+  <br><br><br>
+<img src="file:///D:/index%20html%20file/download%20(1).png" class="principal-img-1">
+<label class="name">S.K. Roy College</label>
+<label class="name-22"><i>Katlicherra, Hailakandi</i></label>
+ <br><br><br><br><br><br><br><br>
+<div class="services">
+<div class="servcs">
+<label class="srvc">Actions</label>
+<label class="srvc-22">Login Options</label>
+</div>
+  <a href="https://www.abc.gov.in/"><button type="" class="button"> Create Academic bank of credit ID</button></a>
+<br>
+<button type="" class="button-2" onclick="return confirm('Registration is closed........')"><i class="fa fa-user-plus"></i> NEW REGISTRATION</button>
+<br><br>
+<a href="Applicant authentication.html"><button type="" class="button-3"><i class="fa fa-sign-in"></i> APPLICANT LOGIN</button></a>
+<BR>
+<a href=""><button type="" class="button-4" onclick="return confirm('Admission is closed.')"><i class="fa fa-graduation-cap"></i> ADMISSION FEE PAYMENT</button></a>
+<br><br>
+<a href="https://skrcadm.in/ExamStartPage.aspx"><button class="button-5" type=""><i class="fa fa-money"></i> EXAMINATION FORM / FEE</button></a>
+<BR>
+<a href="https://skrcadm.in/Login.aspx"><button type="" class="button-6"><i class="fa fa-university"></i> COLLEGE LOGIN</button></a>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<label class="principal">About Principal</label>
+<img src="file:///D:/index%20html%20file/OIP.jfif" class="principal-img">
+<label class="principal-name">K. Rajen Singha</label>
+
+</body>
+
+</html>

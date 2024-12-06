@@ -1,0 +1,114 @@
+*{
+margin: 0;
+padding: 0;
+}
+.form{
+width: 100%;
+height: 100%;
+background-color: yellow;
+}
+.menu-bar{
+width: 100%;
+height: 40px;
+background-color: red;
+}
+button{
+width: 150px;
+height: 30px;
+margin-top: 5px;
+margin-left: 5px;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 20px;
+color: yellow;
+background-color: red;
+BORDER-RADIUS: 10PX;
+border: none;
+cursor: pointer;
+transition: 0.3s ease-in-out;
+}
+button:hover{
+color: black;
+BACKGROUND-COLOR: WHITE;
+}
+.login{
+background-color: black;
+border-radius: 5px;
+color: white;
+font-size: 15px;
+transition: 0.3s ease-in-out;
+}
+.login:hover{
+background-color: white;
+color: black;
+}
+.vl{
+border-left: 8px solid green;
+height: 440px;
+margin-left: 200px;
+}
+h1{
+margin-top: 20px;
+letter-spacing: 3px;
+font-weight: bold;
+}
+.font-1{
+color: white;
+background-color: black;
+}
+.font-1:HOVER{
+color: black;
+background-color: white;
+}
+.font-2{
+color: black;
+background-color: white;
+}
+.font-2:HOVER{
+color: white;
+background-color: black;
+}
+.font-3{
+color: white;
+background-color: black;
+}
+.font-4{
+color: black;
+background-color: white;
+}
+.font-5{
+color: white;
+background-color: black;
+}
+.font-6{
+color: black;
+background-color: white;
+}
+.font-7{
+color: white;
+background-color: black;
+}
+.font-8{
+color: black;
+background-color: white;
+}
+.font-9{
+color: white;
+background-color: black;
+}
+.btm{
+width: 70px;
+height: 40px;
+background-color: BLUE;
+margin-left: 170px;
+}
+.btm2{
+width: 120px;
+height: 40px;
+background-color: RED;
+margin-left: 150px;
+}
+font{
+cursor: pointer;
+transition: 0.4s ease-out;
+}

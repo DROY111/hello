@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>my govt.in</title>
+ <style>
+form{
+  width: 65%;
+  box-shadow: 1px 1px 10px 1px black;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+h2{
+  color: #2133FF;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+}
+img{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 120px;
+  align-items: center;
+}
+.select{
+  width: 91%;
+  height: 30px;
+  outline: none;
+  margin-left: 15px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+}
+label{
+  margin-left: 15px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.input{
+  width: 90%;
+  height: 25px;
+  outline: none;
+  margin-left: 15px;
+  
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.button{
+  width: 110px;
+  height: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: #1824A3;
+  border: none;
+  border-radius:5px;
+  margin-left: 15px;
+}
+p{
+  margin-left: 15px;
+  font-family: Arial;
+}
+.div{
+  width: 85%;
+  height: 100px;
+  background-image: url('/Jean_Trebek_Beauty_in_Nature.jpg');
+  border-radius: 10px;
+  margin: 0px;
+  margin-left: 20px;
+ 
+}
+</style>
+</head>
+
+<body>
+<form action="otp for govt.in.html" method="get">
+ <br>
+<h2>Participation Form</h2>
+<br>
+<label for="Country *">Country *</label>
+<br>
+<select class="select" id="mySelect">
+  <option value="first">India</option>
+  </select>
+  <br><br>
+  <label for="Name *">Name *</label>
+  <br>
+  <input type="text" class="input" id="name" required>
+  <br><br>
+  <label for="Mobile *">Mobile *</label>
+  <br>
+  <input type="text" name="mobile" id="mobile" class="input" required>
+  <br><br>
+  <label for="Date of Birth *">Date of Birth *</label>
+  <br>
+  <input type="date" name="date_of_birth" id="date_of_birth" class="input" required>
+  <br><br>
+  <label for="Gender *">Gender *</label>
+  <br>
+  <select name="Gender" id="Gender" class="select" required>
+    <option value="-1" ></option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+  <br><br>
+  <label for="State / UT *">State / UT *</label>
+  <br>
+  <select id="mySelect" class="select" required>
+    <option value="first"></option>
+    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Meghalaya">Meghalaya</option>
+  </select>
+  <br><br>
+  <label for="District">District *</label>
+  <br>
+  <input type="text" name="district" id="mySelect" class="input" placeholder="Enter Your District *" required>
+  <br>
+  <p><input type="checkbox" checked required>I agree to terms and conditions</p>
+<center> <button class="button" type="submit">Get OTP</button></center>
+  <br><br>
+  <label for="Important Information :">Important Information :</label>
+  <br>
+ <p>Please fill all the mandatory fields to receive an OTP on your registered Mobile Number or Email. After entering the OTP it will be verified automatically. Upon successful verification , you will be redirected , and the quiz will begin.</p>
+ <br><br>
+</form>
+
+</body>
+
+</html>
